@@ -11,7 +11,7 @@ const fetchPokemon = () => {
             // console.log(res);
             
             pokeImage("./img/Llorando.png");
-            pokeNombre("Nombre: Pokémon");
+            pokeNombre("Pokémon no existe");
             pokeTipo(`Tipo: `);
             pokehp(" hp");
             pokeAtaque();
