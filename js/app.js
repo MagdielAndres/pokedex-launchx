@@ -10,7 +10,7 @@ const fetchPokemon = () => {
         if(res.status != "200"){
             // console.log(res);
             
-            pokeImage("../img/PikachuLlorando.gif");
+            pokeImage("../img/Llorando.png");
             pokeNombre("Nombre: Pokémon");
             pokeTipo(`Tipo: `);
             pokehp(" hp");
