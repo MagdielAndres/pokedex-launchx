@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png"sizes="32x32" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400;1,600;1,700&family=Kumbh+Sans:wght@400;700&family=Lobster&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Pokédex|LaunchX</title>
+</head>
+<body>
+    <main class="flex">
+        <section class="header">
+            <h1 class="header-title">Pokédex | LaunchX</h1>
+        </section>        
+        <article class="buscador">
+            
+                <label class="buscador-label" for="pokeName">Nombre del Pokémon</label>
+                <input type="text" class="buscador-input" placeholder="Nombre del Pokémon" id="pokeName" name="pokeName"><br>
+                <input type="submit" class="buscador-btn"  onclick="fetchPokemon()" value="Buscar pokémon">
+            
+                       
+        </article>
+        <article class="card">
+            
+            <img src="./img/bg-pattern-card.svg" alt="Imagen del card header" class="card-header">
+            <div class="card-body">
+                <!-- <img src="./images/image-victor.jpg" alt="Imagen de Vitor" class="card-body-img"> -->
+                <img src="./img/Pokeball2.png" alt="Pokebola" id="pokeImg" class="card-body-img" width="110px"><br>
+                <h2 id="pokeNombre" name="pokeNombre" class="card-body-subtitle">Nombre: Pokémon</h2>
+                <p class="card-body-texto" id="pokeTipo" name="pokeTipo">Tipo: Pokémon</p>
+            </div>
+            <div class="card-footer">
+                <div class="card-footer-social">
+                    <h3>HP:</h3>
+                    <p id="pokeHp"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>Ataque:</h3>
+                    <p id="ataque"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>Defensa:</h3>
+                    <p id="defensa"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>Ataque especial:</h3>
+                    <p id="ataEsp"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>Defensa especial:</h3>
+                    <p id="defEsp"></p>
+                </div>
+                <div class="card-footer-social">
+                    <h3>Velocidad:</h3>
+                    <p id="velocidad"></p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

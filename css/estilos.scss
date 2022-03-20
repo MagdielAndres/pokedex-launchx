@@ -1,0 +1,174 @@
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: #6a6f81;
+    --Dark-gray: #969696;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //62.5% es igua la 10px
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: red;
+    background-image: url("../img/bg-pattern-top.svg"), url("../img/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+// Header
+.header {
+    background-color: var(--Dark-cyan);
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315); // ejeX ejeY degradado color
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    margin-bottom: 8px;
+    width: 320px;
+
+    &-title {
+        margin: 0;
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-size: 1.8rem;
+        color: var(--Very-dark-desaturated);
+        text-transform: capitalize;
+    }
+}
+
+
+// Bucador
+.buscador {
+    background-color: var(--Dark-cyan);
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315); // ejeX ejeY degradado color
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    margin-bottom: 15px;
+    padding: 10px 0;
+    width: 320px;
+
+    &-label {
+        color: var(--Very-dark-desaturated);
+        font-size: 1.7rem;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+    &-input {
+        color: var(--Dark-grayish-blue);
+        border-radius: 16px;
+        border: 3px solid var(--Dark-gray);
+        font-size: 1.4rem;
+        font-weight: 400;
+        font-family: 'Kumbh Sans', sans-serif;
+        margin-top: 2px;
+        margin-bottom: 4px;
+        text-align: center;
+        padding: 11px 5px;
+        width: 219px;
+        height: 40px;
+    }
+
+    &-btn {
+        background-color: var(--Very-dark-desaturated);
+        color: var(--Dark-cyan);
+        margin: 2px 0 4px 0;
+        padding: 11px 5px;
+        border-radius: 16px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        width: 219px;
+        height: 40px;
+    }
+}
+
+//Card
+.card {
+    background-color: #eaf2e3;
+    width: 320px;
+    height: 369px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315); // ejeX ejeY degradado color
+
+    &-header {
+        width: 100%;
+        display: block;
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgba(153, 153, 153, 0.383);
+
+        &-img {
+            // border: 2px solid var(--Very-dark-desaturated);
+            border-radius: 50%;
+            margin-top: calc(-118px - 2px);            
+            background-color: white;
+            box-shadow: 0px 1px 0px 3px rgba(0, 0, 0, 0.315);
+        }
+
+        &-subtitle {
+            margin: 0;
+            margin-top: 8px;
+            font-size: 1.8rem;
+            color: var(--Very-dark-desaturated);
+            text-transform: capitalize;
+        }
+        &-texto {
+            color: var(--Dark-grayish-blue);
+            font-size: 1.7rem;
+            font-weight: 400;
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: space-around;
+        // flex-wrap: wrap;
+        flex-direction: column;
+
+        &-social {
+            // text-align: center;
+            display: flex;
+            padding-left: 30px;
+            margin: 0 30px;
+            // margin-top: 2rem;
+            // margin-bottom: 2rem;
+            
+            h3 {
+                margin-top: 2px;
+                margin-bottom: 1px;
+                width: 116px;
+                color: var(--Very-dark-desaturated);
+                font-size: 1.4rem;
+            }
+
+            p {
+                margin-top: 2px;
+                margin-left: 30px;            
+                color: var(--Dark-grayish-blue);
+                letter-spacing: 1px;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
